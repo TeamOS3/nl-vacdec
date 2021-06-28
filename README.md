@@ -29,3 +29,4 @@ Contributors
 - Jaap van Ginkel
 - Vincent Breider
 
+Based on original work by Hanno Boeck: https://github.com/hannob/vacdec

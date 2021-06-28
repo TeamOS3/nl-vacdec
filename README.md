@@ -12,6 +12,9 @@ Getting started
 ---------------
 - Save your QR code as .png
 - Run: python3 decode.py qr.png
+- Or:
+- First extract QR code using zbarimg: zbarimg Screenshot.png > qr.zbar
+- Then: python3 decode.py qr.zbar
 
 The Dutch try to preserve the privacy of the tested person, 
 by disclosing only a small amount of information. See

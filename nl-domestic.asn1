@@ -14,4 +14,9 @@ ProofV2 DEFINITIONS ::= BEGIN
        aDisclosed        ADisclosureSeq
    }
 
+   CredentialMetadataSer ::= SEQUENCE {
+       credentialVersion OCTET STRING,
+       issuerPkId        PrintableString
+   }
+
 END

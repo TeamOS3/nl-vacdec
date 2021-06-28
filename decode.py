@@ -78,9 +78,26 @@ ad = d['aDisclosed']
 
 for i in range(0,len(ad)):
     val = ad[i]
+    
     # Actual values are right-shifted 1: 
     # https://github.com/minvws/nl-covid19-coronacheck-idemix/blob/main/common/common.go#L137
     dec = val >> 1;
+    
+    if i == 0:
+        # CredentialMetadata
+        # This integer is another ASN.1 sequence. So convert to bytes,
+        # and parse. The number 15 comes from asn1parse
+        cm = dec.to_bytes(15,byteorder='big')
+        d2 = parser.decode('CredentialMetadataSer',cm)
+        
+        # Public keys listed in
+        # nl-covid19-coronacheck-mobile-core/testdata/public_keys.json
+	#
+        # Sample data showed VWS-CC-1 or VWS-CC-2 as Issuer
+        print("Decoded CredentialMetadata",d2)
+
+        continue
+    
     if dec < 256:
         c = chr(dec)
     else:

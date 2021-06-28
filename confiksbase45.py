@@ -24,8 +24,11 @@ from typing import Mapping, Union
 __version__ = '2.1.0'
 
 # 58 character alphabet used
+# RIPPLE is 58, but BITCOIN is only 45
 BITCOIN_ALPHABET = \
     b'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:'
+# Needs cleanup
+# Not used
 RIPPLE_ALPHABET = b'rpshnaf39wBUDNEGHJKLM4PQRST7VWXYZ2bcdeCg65jkm8oFqi1tuvAxyz'
 XRP_ALPHABET = RIPPLE_ALPHABET
 

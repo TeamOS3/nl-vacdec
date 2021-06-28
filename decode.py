@@ -36,12 +36,21 @@ AttributeTypesV2 = [
 
 if len(sys.argv) != 2:
     print("Usage: decode.py qr.png")
+    print("or")
+    print("zbarimg screenshot.png > qr.txt")
+    print("and: decode.py qr.txt")
     sys.exit(-1)
 
-img = PIL.Image.open(sys.argv[1])
-qrdata = pyzbar.pyzbar.decode(img)
-proofdata = qrdata[0].data
-
+if sys.argv[1].endswith(".png"):
+    img = PIL.Image.open(sys.argv[1])
+    qrdata = pyzbar.pyzbar.decode(img)
+    proofdata = qrdata[0].data
+else:
+    f = open(sys.argv[1],"rb")
+    zbardata = f.read()
+    f.close()
+    proofdata = zbardata[len("QR-Code:"):]
+    
 # See https://github.com/minvws/nl-covid19-coronacheck-idemix/blob/main/verifier/verifier.go#L29
 
 # Header: 'NL' + proofVersionByte + proofBase45

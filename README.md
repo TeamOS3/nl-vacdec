@@ -1,4 +1,4 @@
-NL-VACDEC - Decode Dutch Green Pass as QR code
+NL-VACDEC - Decode Dutch Green Card as QR code
 ==============================================
 
 Requirements

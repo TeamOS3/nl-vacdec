@@ -1,0 +1,17 @@
+-- Created from openssl asn1parse of good data --
+
+ProofV2 DEFINITIONS ::= BEGIN
+
+   ADisclosureSeq ::= SEQUENCE OF INTEGER
+
+   ProofSerV2 ::= SEQUENCE {
+       disclosureTime    INTEGER,
+       c                 INTEGER,
+       a                 INTEGER,
+       eResponse         INTEGER,  
+       vResponse         INTEGER,
+       aResponse         INTEGER,
+       aDisclose         ADisclosureSeq
+   }
+
+END

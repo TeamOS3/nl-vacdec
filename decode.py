@@ -17,7 +17,7 @@ import confiksbase45
 import asn1tools
 
 # From: https://github.com/minvws/nl-covid19-coronacheck-idemix/blob/main/common/common.go#L35
-# Attributes start with a Metadata / CredentialMessage, then the 
+# Attributes start with a CredentialMetdata spec, then the 
 # attributes from AttributeTypesV2 list
 #     https://github.com/minvws/nl-covid19-coronacheck-idemix/blob/main/verifier/verifier.go#L180
 #

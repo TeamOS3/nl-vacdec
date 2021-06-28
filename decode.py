@@ -22,7 +22,7 @@ import asn1tools
 #     https://github.com/minvws/nl-covid19-coronacheck-idemix/blob/main/verifier/verifier.go#L180
 #
 AttributeTypesV2 = [
-    "CredentialMessage",  
+    "CredentialMetadata",
     "isSpecimen",
     "isPaperProof",
     "validFrom",
@@ -65,7 +65,7 @@ d = parser.decode('ProofSerV2',asn1data)
 
 #print(d)
 
-ad = d['aDisclose']
+ad = d['aDisclosed']
 
 for i in range(0,len(ad)):
     val = ad[i]

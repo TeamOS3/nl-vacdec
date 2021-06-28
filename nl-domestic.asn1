@@ -11,7 +11,7 @@ ProofV2 DEFINITIONS ::= BEGIN
        eResponse         INTEGER,  
        vResponse         INTEGER,
        aResponse         INTEGER,
-       aDisclose         ADisclosureSeq
+       aDisclosed        ADisclosureSeq
    }
 
 END

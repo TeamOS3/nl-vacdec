@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Decode the Dutch Green Pass QR code
 #
@@ -17,9 +17,12 @@ import confiksbase45
 import asn1tools
 
 # From: https://github.com/minvws/nl-covid19-coronacheck-idemix/blob/main/common/common.go#L35
-# But my sample data seems to have an extra attribute...
+# Attributes start with a Metadata / CredentialMessage, then the 
+# attributes from AttributeTypesV2 list
+#     https://github.com/minvws/nl-covid19-coronacheck-idemix/blob/main/verifier/verifier.go#L180
+#
 AttributeTypesV2 = [
-     "Unknown",
+    "CredentialMessage",  
     "isSpecimen",
     "isPaperProof",
     "validFrom",

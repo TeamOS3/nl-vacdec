@@ -31,3 +31,4 @@ Contributors
 - Vincent Breider
 
 Based on original work by Hanno Boeck: https://github.com/hannob/vacdec
+confiksbase45.py needs some serious cleaning up.

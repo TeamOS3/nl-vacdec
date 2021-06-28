@@ -5,8 +5,9 @@ Requirements
 ------------
 * Python3
 * PIL toolkit: sudo apt install python3-pilkit
-* pyzbar:  pip3 install pyzbar
+* pyzbar: pip3 install pyzbar
 * asn1tools: pip3 install asn1tools 
+* (possibly also needed: pip3 install -U prompt-toolkit)
 
 Getting started
 ---------------

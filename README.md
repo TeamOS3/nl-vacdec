@@ -56,7 +56,7 @@ The `public_key` field in this JSON data structure contains a BASE64 encoded XML
    <ECDSA>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE07Z7i2/6nHw+E8H7b5vSLNdpRd20WwLjlwhc0QEeebfvR8TCVPVM0Yetu8Ecl+KSDc1FvWUuRUNWQvbtUSNNkg==</ECDSA>
 ```
 
-This again points to the use of [IBM Zurich's IDEMIX](https://www.zurich.ibm.com/idemix) crypto system.
+This again points to the use of IBM Zurich's IDEMIX crypto system ([paper](https://www.zurich.ibm.com/pdf/csc/Identity_Mixer_Nov_2015.pdf),[site](https://www.zurich.ibm.com/idemix)).
 
 
 Miscellaneous

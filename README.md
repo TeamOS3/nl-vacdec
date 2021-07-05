@@ -18,7 +18,7 @@ Decoding the QR
 - Then: python3 decode.py qr.zbar
 
 The Dutch try to preserve the privacy of the tested person, 
-by disclosing only a small amount of information. See
+by disclosing only a small amount of information in the form of attributes. See
 
 * https://github.com/minvws/nl-covid19-coronacheck-app-coordination/blob/main/architecture/Privacy%20Preserving%20Green%20Card.md
 * https://github.com/minvws/nl-covid19-coronacheck-app-coordination/tree/main/architecture/identity

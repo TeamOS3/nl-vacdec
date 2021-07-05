@@ -35,13 +35,13 @@ AttributeTypesV2 = [
 
 
 if len(sys.argv) != 2:
-    print("Usage: decode.py qr.png")
+    print("Usage: decode.py qr.{png,jpg}")
     print("or")
-    print("zbarimg screenshot.png > qr.txt")
+    print("zbarimg screenshot.{png,jpg} > qr.txt")
     print("and: decode.py qr.txt")
     sys.exit(-1)
 
-if sys.argv[1].endswith(".png"):
+if sys.argv[1].endswith(".png") or sys.argv[1].endswith(".jpg"):
     img = PIL.Image.open(sys.argv[1])
     qrdata = pyzbar.pyzbar.decode(img)
     proofdata = qrdata[0].data

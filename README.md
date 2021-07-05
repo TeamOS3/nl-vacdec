@@ -56,7 +56,8 @@ The `public_key` field in this JSON data structure contains a BASE64 encoded XML
    <ECDSA>MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE07Z7i2/6nHw+E8H7b5vSLNdpRd20WwLjlwhc0QEeebfvR8TCVPVM0Yetu8Ecl+KSDc1FvWUuRUNWQvbtUSNNkg==</ECDSA>
 ```
 
-This again points to the use of IBM Zurich's IDEMIX crypto system ([paper](https://www.zurich.ibm.com/pdf/csc/Identity_Mixer_Nov_2015.pdf),[site](https://www.zurich.ibm.com/idemix)).
+This again points to the use of IBM Zurich's IDEMIX crypto system ([paper](https://www.zurich.ibm.com/pdf/csc/Identity_Mixer_Nov_2015.pdf),[site](https://www.zurich.ibm.com/idemix)). When we look at the [actual verification code](https://github.com/minvws/nl-covid19-coronacheck-idemix/blob/main/verifier/verifier.go), the keys are used
+as input to [GABI](https://github.com/privacybydesign/gabi), "a Go implementation of the IRMA approach to the Idemix attribute based credential system."
 
 
 Miscellaneous
